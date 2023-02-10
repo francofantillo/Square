@@ -25,6 +25,7 @@
 		BABA59772995F7680006C3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA59762995F7680006C3AA /* SceneDelegate.swift */; };
 		BABA5979299601FE0006C3AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5978299601FE0006C3AA /* Extensions.swift */; };
 		BABA597B299602CF0006C3AA /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA597A299602CF0006C3AA /* Employees.swift */; };
+		BABA597E2996EE600006C3AA /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BABA597D2996EE600006C3AA /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABA597E2996EE600006C3AA /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +123,7 @@
 				BABA59722995F1EC0006C3AA /* Info.plist */,
 				BABA5978299601FE0006C3AA /* Extensions.swift */,
 				BABA596B2995E7370006C3AA /* Models */,
-				BABA596229958DB20006C3AA /* Client */,
+				BABA596229958DB20006C3AA /* Networking */,
 				BABA595A299589050006C3AA /* Launch */,
 				BABA595D2995895F0006C3AA /* UI */,
 				BABA5933299588B50006C3AA /* Assets.xcassets */,
@@ -176,14 +178,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		BABA596229958DB20006C3AA /* Client */ = {
+		BABA596229958DB20006C3AA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				BABA596329958DB20006C3AA /* DataClient.swift */,
 				BABA596429958DB20006C3AA /* HttpClient.swift */,
 				BABA596529958DB20006C3AA /* Errors.swift */,
 			);
-			path = Client;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		BABA596B2995E7370006C3AA /* Models */ = {
@@ -220,6 +222,9 @@
 			dependencies = (
 			);
 			name = SqaureTest;
+			packageProductDependencies = (
+				BABA597D2996EE600006C3AA /* CachedAsyncImage */,
+			);
 			productName = SqaureTest;
 			productReference = BABA592C299588B40006C3AA /* SqaureTest.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +297,9 @@
 				Base,
 			);
 			mainGroup = BABA5923299588B40006C3AA;
+			packageReferences = (
+				BABA597C2996EE600006C3AA /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = BABA592D299588B40006C3AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -706,6 +714,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BABA597C2996EE600006C3AA /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BABA597D2996EE600006C3AA /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BABA597C2996EE600006C3AA /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BABA5924299588B40006C3AA /* Project object */;
 }

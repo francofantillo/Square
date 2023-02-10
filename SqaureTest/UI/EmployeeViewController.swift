@@ -16,6 +16,7 @@ class EmployeeViewController: UIViewController {
     let collectionView: UICollectionView
     let employeeClient = DataClient(client: HttpClient(session: URLSession.shared), apiKey: "bf718d4dd8b23985d9c3edbcfd440a27")
     var employees = [Employee]()
+    private let refreshControl = UIRefreshControl()
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -26,6 +27,7 @@ class EmployeeViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.refreshControl = refreshControl
     }
     
     override func viewDidLoad() {
@@ -35,17 +37,26 @@ class EmployeeViewController: UIViewController {
         view.backgroundColor = .white
         
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
+        
+        // Configure Refresh Control
+        refreshControl.addTarget(self, action: #selector(refreshEmployeeData(_:)), for: .valueChanged)
+        
+        retrieveData()
+    }
+    
+    private func retrieveData(){
         
         Task {
             do {
                 let employees = try await employeeClient.getEmployees()
-                self.employees.append(contentsOf: employees)
-                collectionView.reloadData()
+                self.employees = employees
+                self.collectionView.reloadData()
+                self.refreshControl.endRefreshing()
             }
             catch let error as APIErrors {
                 displayErrorAlert(errorMessage: error.localizedDescription)
@@ -54,6 +65,10 @@ class EmployeeViewController: UIViewController {
                 displayErrorAlert(errorMessage: error.localizedDescription)
             }
         }
+    }
+    
+    @objc private func refreshEmployeeData(_ sender: Any) {
+        retrieveData()
     }
     
     private func displayErrorAlert(errorMessage: String){
@@ -101,7 +116,7 @@ extension EmployeeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return sizes.cellMargin
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -109,6 +124,6 @@ extension EmployeeViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: sizes.cellMargin, left: sizes.cellMargin, bottom: 0, right: sizes.cellMargin)
     }
 }

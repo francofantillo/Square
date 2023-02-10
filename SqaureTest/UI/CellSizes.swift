@@ -15,7 +15,7 @@ struct CellSizes {
 	
 	init(){
 		
-		self.cellMargin = 10
+		self.cellMargin = 30
 		let cellsPerRow = 2
 		
 		let numberOfCellDivides = cellsPerRow - 1
@@ -24,7 +24,7 @@ struct CellSizes {
 		let totalSpaceToRemove = cellEndSpace + cellDivideSpace
 	
 		self.width = (UIScreen.main.bounds.width - totalSpaceToRemove) / CGFloat(cellsPerRow)
-		self.height = ((UIScreen.main.bounds.width - totalSpaceToRemove) / CGFloat(cellsPerRow)) * 1.5
+        self.height = self.width * 1.75
 		
 		print("Cell width is: \(width)")
 		print("Cell height is: \(height)")
