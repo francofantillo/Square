@@ -23,6 +23,8 @@
 		BABA596F2995EB610006C3AA /* EmployeeCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596E2995EB610006C3AA /* EmployeeCellContentView.swift */; };
 		BABA59752995F5E80006C3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABA59742995F5E80006C3AA /* LaunchScreen.storyboard */; };
 		BABA59772995F7680006C3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA59762995F7680006C3AA /* SceneDelegate.swift */; };
+		BABA5979299601FE0006C3AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5978299601FE0006C3AA /* Extensions.swift */; };
+		BABA597B299602CF0006C3AA /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA597A299602CF0006C3AA /* Employees.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		BABA59722995F1EC0006C3AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BABA59742995F5E80006C3AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BABA59762995F7680006C3AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BABA5978299601FE0006C3AA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BABA597A299602CF0006C3AA /* Employees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employees.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				BABA59722995F1EC0006C3AA /* Info.plist */,
+				BABA5978299601FE0006C3AA /* Extensions.swift */,
 				BABA596B2995E7370006C3AA /* Models */,
 				BABA596229958DB20006C3AA /* Client */,
 				BABA595A299589050006C3AA /* Launch */,
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BABA596C2995E7870006C3AA /* Employee.swift */,
+				BABA597A299602CF0006C3AA /* Employees.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABA596F2995EB610006C3AA /* EmployeeCellContentView.swift in Sources */,
+				BABA597B299602CF0006C3AA /* Employees.swift in Sources */,
 				BABA596129958D940006C3AA /* CellSizes.swift in Sources */,
 				BABA595C2995891F0006C3AA /* AppDelegate.swift in Sources */,
 				BABA596D2995E7870006C3AA /* Employee.swift in Sources */,
@@ -338,6 +345,7 @@
 				BABA595F29958ABA0006C3AA /* EmployeeViewController.swift in Sources */,
 				BABA596829958DB20006C3AA /* Errors.swift in Sources */,
 				BABA596729958DB20006C3AA /* HttpClient.swift in Sources */,
+				BABA5979299601FE0006C3AA /* Extensions.swift in Sources */,
 				BABA596629958DB20006C3AA /* DataClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

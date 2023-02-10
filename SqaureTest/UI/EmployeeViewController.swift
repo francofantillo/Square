@@ -30,7 +30,7 @@ class EmployeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Popular"
+        navigationItem.title = "Employees"
         view.addSubview(collectionView)
         view.backgroundColor = .white
         
@@ -42,17 +42,17 @@ class EmployeeViewController: UIViewController {
         ])
         
         Task {
-//            do {
-//                let movies = try await movieClient.popularMovies()
-//                self.movies.append(contentsOf: movies)
-//                collectionView.reloadData()
-//            }
-//            catch let error as APIErrors {
-//                displayErrorAlert(errorMessage: error.localizedDescription)
-//            }
-//            catch let error {
-//                displayErrorAlert(errorMessage: error.localizedDescription)
-//            }
+            do {
+                let employees = try await employeeClient.getEmployees()
+                self.employees.append(contentsOf: employees)
+                collectionView.reloadData()
+            }
+            catch let error as APIErrors {
+                displayErrorAlert(errorMessage: error.localizedDescription)
+            }
+            catch let error {
+                displayErrorAlert(errorMessage: error.localizedDescription)
+            }
         }
     }
     

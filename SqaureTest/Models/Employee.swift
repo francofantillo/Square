@@ -13,7 +13,7 @@ struct Employee: Codable {
         case uuid
         case fullName = "full_name"
         case phoneNumber = "phone_number"
-        case email = "remail_address"
+        case email = "email_address"
         case bio = "biography"
         case photoURLSmall = "photo_url_small"
         case photoURLLarge = "photo_url_large"
@@ -30,6 +30,33 @@ struct Employee: Codable {
     let photoURLLarge: String!
     let team: String
     let employeeType: String
+    
+    init(uuid: String, fullName: String, phoneNumber: String?, email: String, bio: String?, photoURLSmall: String?, photoURLLarge: String?, team: String, employeeType: String){
+        self.uuid = uuid
+        self.fullName = fullName
+        self.phoneNumber = phoneNumber
+        self.email = email
+        self.bio = bio
+        self.photoURLSmall = photoURLSmall
+        self.photoURLLarge = photoURLLarge
+        self.team = team
+        self.employeeType = employeeType
+    }
+    
+    init(from decoder: Decoder) throws {
+        
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let uuid = try container.decode(String.self, forKey: .uuid)
+        let fullName = try container.decode(String.self, forKey: .fullName)
+        let phoneNumber = try container.decodeIfPresent(String.self, forKey: .phoneNumber)
+        let email = try container.decode(String.self, forKey: .email)
+        let bio = try container.decodeIfPresent(String.self, forKey: .bio)
+        let photoURLSmall = try container.decodeIfPresent(String.self, forKey: .photoURLSmall)
+        let photoURLLarge = try container.decodeIfPresent(String.self, forKey: .photoURLLarge)
+        let team = try container.decode(String.self, forKey: .team)
+        let employeeType = try container.decode(String.self, forKey: .employeeType)
+        self.init(uuid: uuid, fullName: fullName, phoneNumber: phoneNumber, email: email, bio: bio, photoURLSmall: photoURLSmall, photoURLLarge: photoURLLarge, team: team, employeeType: employeeType)
+    }
 }
 
 extension Employee: Hashable {
