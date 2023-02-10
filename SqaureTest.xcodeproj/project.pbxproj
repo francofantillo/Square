@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BABA5930299588B40006C3AA /* SqaureTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA592F299588B40006C3AA /* SqaureTestApp.swift */; };
-		BABA5932299588B40006C3AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5931299588B40006C3AA /* ContentView.swift */; };
 		BABA5934299588B50006C3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA5933299588B50006C3AA /* Assets.xcassets */; };
 		BABA5938299588B50006C3AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA5937299588B50006C3AA /* Preview Assets.xcassets */; };
 		BABA5942299588B50006C3AA /* SqaureTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5941299588B50006C3AA /* SqaureTestTests.swift */; };
 		BABA594C299588B50006C3AA /* SqaureTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA594B299588B50006C3AA /* SqaureTestUITests.swift */; };
 		BABA594E299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */; };
+		BABA595C2995891F0006C3AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA595B2995891F0006C3AA /* AppDelegate.swift */; };
+		BABA595F29958ABA0006C3AA /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA595E29958ABA0006C3AA /* EmployeeViewController.swift */; };
+		BABA596129958D940006C3AA /* CellSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596029958D940006C3AA /* CellSizes.swift */; };
+		BABA596629958DB20006C3AA /* DataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596329958DB20006C3AA /* DataClient.swift */; };
+		BABA596729958DB20006C3AA /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596429958DB20006C3AA /* HttpClient.swift */; };
+		BABA596829958DB20006C3AA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596529958DB20006C3AA /* Errors.swift */; };
+		BABA596A2995E6B80006C3AA /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA59692995E6B80006C3AA /* EmployeeCell.swift */; };
+		BABA596D2995E7870006C3AA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596C2995E7870006C3AA /* Employee.swift */; };
+		BABA596F2995EB610006C3AA /* EmployeeCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596E2995EB610006C3AA /* EmployeeCellContentView.swift */; };
+		BABA59752995F5E80006C3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABA59742995F5E80006C3AA /* LaunchScreen.storyboard */; };
+		BABA59772995F7680006C3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA59762995F7680006C3AA /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		BABA592C299588B40006C3AA /* SqaureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqaureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BABA592F299588B40006C3AA /* SqaureTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestApp.swift; sourceTree = "<group>"; };
-		BABA5931299588B40006C3AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BABA5933299588B50006C3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABA5935299588B50006C3AA /* SqaureTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SqaureTest.entitlements; sourceTree = "<group>"; };
 		BABA5937299588B50006C3AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +52,18 @@
 		BABA5947299588B50006C3AA /* SqaureTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqaureTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABA594B299588B50006C3AA /* SqaureTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestUITests.swift; sourceTree = "<group>"; };
 		BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BABA595B2995891F0006C3AA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BABA595E29958ABA0006C3AA /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
+		BABA596029958D940006C3AA /* CellSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSizes.swift; sourceTree = "<group>"; };
+		BABA596329958DB20006C3AA /* DataClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataClient.swift; sourceTree = "<group>"; };
+		BABA596429958DB20006C3AA /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		BABA596529958DB20006C3AA /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		BABA59692995E6B80006C3AA /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		BABA596C2995E7870006C3AA /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		BABA596E2995EB610006C3AA /* EmployeeCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCellContentView.swift; sourceTree = "<group>"; };
+		BABA59722995F1EC0006C3AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABA59742995F5E80006C3AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BABA59762995F7680006C3AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +114,11 @@
 		BABA592E299588B40006C3AA /* SqaureTest */ = {
 			isa = PBXGroup;
 			children = (
-				BABA592F299588B40006C3AA /* SqaureTestApp.swift */,
-				BABA5931299588B40006C3AA /* ContentView.swift */,
+				BABA59722995F1EC0006C3AA /* Info.plist */,
+				BABA596B2995E7370006C3AA /* Models */,
+				BABA596229958DB20006C3AA /* Client */,
+				BABA595A299589050006C3AA /* Launch */,
+				BABA595D2995895F0006C3AA /* UI */,
 				BABA5933299588B50006C3AA /* Assets.xcassets */,
 				BABA5935299588B50006C3AA /* SqaureTest.entitlements */,
 				BABA5936299588B50006C3AA /* Preview Content */,
@@ -127,6 +149,53 @@
 				BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */,
 			);
 			path = SqaureTestUITests;
+			sourceTree = "<group>";
+		};
+		BABA595A299589050006C3AA /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				BABA59742995F5E80006C3AA /* LaunchScreen.storyboard */,
+				BABA595B2995891F0006C3AA /* AppDelegate.swift */,
+				BABA59762995F7680006C3AA /* SceneDelegate.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		BABA595D2995895F0006C3AA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BABA596029958D940006C3AA /* CellSizes.swift */,
+				BABA595E29958ABA0006C3AA /* EmployeeViewController.swift */,
+				BABA59702995EB670006C3AA /* Cells */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BABA596229958DB20006C3AA /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BABA596329958DB20006C3AA /* DataClient.swift */,
+				BABA596429958DB20006C3AA /* HttpClient.swift */,
+				BABA596529958DB20006C3AA /* Errors.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BABA596B2995E7370006C3AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BABA596C2995E7870006C3AA /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BABA59702995EB670006C3AA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BABA59692995E6B80006C3AA /* EmployeeCell.swift */,
+				BABA596E2995EB610006C3AA /* EmployeeCellContentView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABA59752995F5E80006C3AA /* LaunchScreen.storyboard in Resources */,
 				BABA5938299588B50006C3AA /* Preview Assets.xcassets in Resources */,
 				BABA5934299588B50006C3AA /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABA5932299588B40006C3AA /* ContentView.swift in Sources */,
-				BABA5930299588B40006C3AA /* SqaureTestApp.swift in Sources */,
+				BABA596F2995EB610006C3AA /* EmployeeCellContentView.swift in Sources */,
+				BABA596129958D940006C3AA /* CellSizes.swift in Sources */,
+				BABA595C2995891F0006C3AA /* AppDelegate.swift in Sources */,
+				BABA596D2995E7870006C3AA /* Employee.swift in Sources */,
+				BABA596A2995E6B80006C3AA /* EmployeeCell.swift in Sources */,
+				BABA59772995F7680006C3AA /* SceneDelegate.swift in Sources */,
+				BABA595F29958ABA0006C3AA /* EmployeeViewController.swift in Sources */,
+				BABA596829958DB20006C3AA /* Errors.swift in Sources */,
+				BABA596729958DB20006C3AA /* HttpClient.swift in Sources */,
+				BABA596629958DB20006C3AA /* DataClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +497,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SqaureTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -437,10 +517,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,12 +539,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SqaureTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -475,10 +559,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
