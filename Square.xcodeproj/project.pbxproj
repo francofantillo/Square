@@ -104,15 +104,15 @@
 		BABA592E299588B40006C3AA /* Square */ = {
 			isa = PBXGroup;
 			children = (
-				BABA59722995F1EC0006C3AA /* Info.plist */,
+				BABA5933299588B50006C3AA /* Assets.xcassets */,
 				BABA5978299601FE0006C3AA /* Extensions.swift */,
+				BABA59722995F1EC0006C3AA /* Info.plist */,
+				BABA5935299588B50006C3AA /* Square.entitlements */,
+				BABA595A299589050006C3AA /* Launch */,
 				BABA596B2995E7370006C3AA /* Models */,
 				BABA596229958DB20006C3AA /* Networking */,
-				BABA595A299589050006C3AA /* Launch */,
-				BABA595D2995895F0006C3AA /* UI */,
-				BABA5933299588B50006C3AA /* Assets.xcassets */,
-				BABA5935299588B50006C3AA /* Square.entitlements */,
 				BABA5936299588B50006C3AA /* Preview Content */,
+				BABA595D2995895F0006C3AA /* UI */,
 			);
 			path = Square;
 			sourceTree = "<group>";
