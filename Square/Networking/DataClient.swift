@@ -19,6 +19,8 @@ class DataClient {
 	func getEmployees() async throws -> [Employee] {
 
 		let path = "/sq-mobile-interview/employees.json"
+        let malformed = "/sq-mobile-interview/employees_malformed.json"
+        let empty = "/sq-mobile-interview/employees_empty.json"
 		let url = try constructURLFromComponents(path: path, queryItems: [])
 		let data = try await client.getData(url: url)
 		let employees = try JSONDecoder().decode(Employees.self, from: data)

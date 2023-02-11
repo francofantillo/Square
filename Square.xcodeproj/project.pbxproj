@@ -111,7 +111,6 @@
 				BABA595A299589050006C3AA /* Launch */,
 				BABA595D2995895F0006C3AA /* UI */,
 				BABA5933299588B50006C3AA /* Assets.xcassets */,
-				BABA597F29970D210006C3AA /* MockURLSession.swift */,
 				BABA5935299588B50006C3AA /* Square.entitlements */,
 				BABA5936299588B50006C3AA /* Preview Content */,
 			);
@@ -160,6 +159,7 @@
 				BABA596329958DB20006C3AA /* DataClient.swift */,
 				BABA596529958DB20006C3AA /* Errors.swift */,
 				BABA596429958DB20006C3AA /* HttpClient.swift */,
+				BABA597F29970D210006C3AA /* MockURLSession.swift */,
 				BABA598129970DDF0006C3AA /* URLSessionProtocol.swift */,
 			);
 			path = Networking;

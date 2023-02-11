@@ -10,44 +10,71 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class EmployeeViewController: UIViewController {
+class EmployeeViewController: UICollectionViewController {
     
     let sizes = CellSizes()
-    let collectionView: UICollectionView
     let employeeClient = DataClient(client: HttpClient(session: URLSession.shared))
     private let refreshControl = UIRefreshControl()
     
     var employees = [Employee]()
+    var loadingContainer: UIView!
+    var emptyLabel: UILabel!
     
     init() {
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(EmployeeCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        super.init(nibName: nil, bundle: nil)
+        super.init(collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.register(EmployeeCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.refreshControl = refreshControl
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Employees"
-        view.addSubview(collectionView)
         view.backgroundColor = .white
         
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        
-        // Configure Refresh Control
+        // Configure Refresh Control and begin intial load
         refreshControl.addTarget(self, action: #selector(refreshEmployeeData(_:)), for: .valueChanged)
         
+        showActivityIndicator()
         retrieveData()
+    }
+    
+    private func showActivityIndicator() {
+        loadingContainer = UIView()
+        loadingContainer.frame = CGRect(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY, width: 80, height: 80) // Set X and Y whatever you want
+        loadingContainer.backgroundColor = .clear
+        
+        let activityView = UIActivityIndicatorView(style: .large)
+        activityView.center = self.view.center
+        
+        loadingContainer.addSubview(activityView)
+        self.view.addSubview(loadingContainer)
+        activityView.startAnimating()
+    }
+    
+    private func hideActivityIndicator(){
+        if let container = loadingContainer {
+            container.removeFromSuperview()
+            self.loadingContainer = nil
+        }
+    }
+
+    private func addEmptyLabel(){
+        
+        emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 42))
+        emptyLabel.center = CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
+        emptyLabel.textAlignment = .center
+        emptyLabel.text = "The employee list is empty."
+        emptyLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        self.view.addSubview(emptyLabel)
     }
     
     private func retrieveData(){
@@ -58,6 +85,15 @@ class EmployeeViewController: UIViewController {
                 self.employees = employees.sorted()
                 self.collectionView.reloadData()
                 self.refreshControl.endRefreshing()
+                hideActivityIndicator()
+                if employees.isEmpty {
+                    addEmptyLabel()
+                } else {
+                    if let label = emptyLabel {
+                        label.removeFromSuperview()
+                        self.emptyLabel = nil
+                    }
+                }
             }
             catch let error as APIErrors {
                 displayErrorAlert(errorMessage: error.localizedDescription)
@@ -82,27 +118,21 @@ class EmployeeViewController: UIViewController {
         present(refreshAlert, animated: true, completion: nil)
     }
     
-    @available(*, unavailable)
-    required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-extension EmployeeViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    //UICollectionViewDelegate
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return employees.count
     }
 
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return 1
     }
-}
-
-extension EmployeeViewController: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    //UICollectionViewDataSource
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! EmployeeCell
         cell.employee = employees[indexPath.row]
