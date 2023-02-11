@@ -10,12 +10,10 @@ import Foundation
 class DataClient {
 
 	let client: HttpClient
-	let apiKey: String
 	
-	init(client: HttpClient, apiKey: String) {
+	init(client: HttpClient) {
 		
 		self.client = client
-		self.apiKey = apiKey
 	}
 	
 	func getEmployees() async throws -> [Employee] {

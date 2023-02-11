@@ -14,9 +14,10 @@ class EmployeeViewController: UIViewController {
     
     let sizes = CellSizes()
     let collectionView: UICollectionView
-    let employeeClient = DataClient(client: HttpClient(session: URLSession.shared), apiKey: "bf718d4dd8b23985d9c3edbcfd440a27")
-    var employees = [Employee]()
+    let employeeClient = DataClient(client: HttpClient(session: URLSession.shared))
     private let refreshControl = UIRefreshControl()
+    
+    var employees = [Employee]()
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -54,7 +55,7 @@ class EmployeeViewController: UIViewController {
         Task {
             do {
                 let employees = try await employeeClient.getEmployees()
-                self.employees = employees
+                self.employees = employees.sorted()
                 self.collectionView.reloadData()
                 self.refreshControl.endRefreshing()
             }

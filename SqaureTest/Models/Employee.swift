@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Employee: Codable {
+struct Employee: Codable, Comparable {
+    
+    static func < (lhs: Employee, rhs: Employee) -> Bool {
+        return lhs.fullName < rhs.fullName
+    }
     
     enum CodingKeys: String, CodingKey {
         case uuid

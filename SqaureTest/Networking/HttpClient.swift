@@ -7,18 +7,6 @@
 
 import Foundation
 
-//MARK: Protocol for MOCK/Real
-protocol URLSessionProtocol {
-    typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
-    
-    func dataTask(with request: URLRequest, completionHandler: @escaping DataTaskResult) -> URLSessionDataTaskProtocol
-}
-
-protocol URLSessionDataTaskProtocol {
-    func resume()
-    func cancel()
-}
-
 //MARK: HttpClient Implementation
 public class HttpClient {
     
@@ -53,6 +41,7 @@ public class HttpClient {
 				}
 				
 				if let error = error {
+                    // If the datatask is cancelled it will throw this error
 					if error.localizedDescription == "cancelled" {
 						return
 					}
@@ -104,7 +93,7 @@ public class HttpClient {
                 return .failure(APIErrors.validationError("Unable to decode api error."))
             }
         }
-        return .failure(APIErrors.invalidResponseError)
+        fatalError("Should never reach this.")
     }
 }
 
