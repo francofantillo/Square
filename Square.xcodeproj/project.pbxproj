@@ -49,13 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BABA592C299588B40006C3AA /* SqaureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqaureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABA592C299588B40006C3AA /* Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Square.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABA5933299588B50006C3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABA5935299588B50006C3AA /* SqaureTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SqaureTest.entitlements; sourceTree = "<group>"; };
 		BABA5937299588B50006C3AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BABA593D299588B50006C3AA /* SqaureTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqaureTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABA593D299588B50006C3AA /* SquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABA5941299588B50006C3AA /* SqaureTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestTests.swift; sourceTree = "<group>"; };
-		BABA5947299588B50006C3AA /* SqaureTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqaureTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABA5947299588B50006C3AA /* SquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABA594B299588B50006C3AA /* SqaureTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestUITests.swift; sourceTree = "<group>"; };
 		BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BABA595B2995891F0006C3AA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,9 +115,9 @@
 		BABA592D299588B40006C3AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BABA592C299588B40006C3AA /* SqaureTest.app */,
-				BABA593D299588B50006C3AA /* SqaureTestTests.xctest */,
-				BABA5947299588B50006C3AA /* SqaureTestUITests.xctest */,
+				BABA592C299588B40006C3AA /* Square.app */,
+				BABA593D299588B50006C3AA /* SquareTests.xctest */,
+				BABA5947299588B50006C3AA /* SquareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BABA592B299588B40006C3AA /* SqaureTest */ = {
+		BABA592B299588B40006C3AA /* Square */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BABA5951299588B50006C3AA /* Build configuration list for PBXNativeTarget "SqaureTest" */;
+			buildConfigurationList = BABA5951299588B50006C3AA /* Build configuration list for PBXNativeTarget "Square" */;
 			buildPhases = (
 				BABA5928299588B40006C3AA /* Sources */,
 				BABA5929299588B40006C3AA /* Frameworks */,
@@ -228,17 +228,17 @@
 			);
 			dependencies = (
 			);
-			name = SqaureTest;
+			name = Square;
 			packageProductDependencies = (
 				BABA597D2996EE600006C3AA /* CachedAsyncImage */,
 			);
 			productName = SqaureTest;
-			productReference = BABA592C299588B40006C3AA /* SqaureTest.app */;
+			productReference = BABA592C299588B40006C3AA /* Square.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BABA593C299588B50006C3AA /* SqaureTestTests */ = {
+		BABA593C299588B50006C3AA /* SquareTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BABA5954299588B50006C3AA /* Build configuration list for PBXNativeTarget "SqaureTestTests" */;
+			buildConfigurationList = BABA5954299588B50006C3AA /* Build configuration list for PBXNativeTarget "SquareTests" */;
 			buildPhases = (
 				BABA5939299588B50006C3AA /* Sources */,
 				BABA593A299588B50006C3AA /* Frameworks */,
@@ -249,14 +249,14 @@
 			dependencies = (
 				BABA593F299588B50006C3AA /* PBXTargetDependency */,
 			);
-			name = SqaureTestTests;
+			name = SquareTests;
 			productName = SqaureTestTests;
-			productReference = BABA593D299588B50006C3AA /* SqaureTestTests.xctest */;
+			productReference = BABA593D299588B50006C3AA /* SquareTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BABA5946299588B50006C3AA /* SqaureTestUITests */ = {
+		BABA5946299588B50006C3AA /* SquareUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BABA5957299588B50006C3AA /* Build configuration list for PBXNativeTarget "SqaureTestUITests" */;
+			buildConfigurationList = BABA5957299588B50006C3AA /* Build configuration list for PBXNativeTarget "SquareUITests" */;
 			buildPhases = (
 				BABA5943299588B50006C3AA /* Sources */,
 				BABA5944299588B50006C3AA /* Frameworks */,
@@ -267,9 +267,9 @@
 			dependencies = (
 				BABA5949299588B50006C3AA /* PBXTargetDependency */,
 			);
-			name = SqaureTestUITests;
+			name = SquareUITests;
 			productName = SqaureTestUITests;
-			productReference = BABA5947299588B50006C3AA /* SqaureTestUITests.xctest */;
+			productReference = BABA5947299588B50006C3AA /* SquareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BABA5927299588B40006C3AA /* Build configuration list for PBXProject "SqaureTest" */;
+			buildConfigurationList = BABA5927299588B40006C3AA /* Build configuration list for PBXProject "Square" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -311,9 +311,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BABA592B299588B40006C3AA /* SqaureTest */,
-				BABA593C299588B50006C3AA /* SqaureTestTests */,
-				BABA5946299588B50006C3AA /* SqaureTestUITests */,
+				BABA592B299588B40006C3AA /* Square */,
+				BABA593C299588B50006C3AA /* SquareTests */,
+				BABA5946299588B50006C3AA /* SquareUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -390,12 +390,12 @@
 /* Begin PBXTargetDependency section */
 		BABA593F299588B50006C3AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BABA592B299588B40006C3AA /* SqaureTest */;
+			target = BABA592B299588B40006C3AA /* Square */;
 			targetProxy = BABA593E299588B50006C3AA /* PBXContainerItemProxy */;
 		};
 		BABA5949299588B50006C3AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BABA592B299588B40006C3AA /* SqaureTest */;
+			target = BABA592B299588B40006C3AA /* Square */;
 			targetProxy = BABA5948299588B50006C3AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -613,7 +613,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SqaureTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SqaureTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Square.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Square";
 			};
 			name = Debug;
 		};
@@ -636,7 +636,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SqaureTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SqaureTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Square.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Square";
 			};
 			name = Release;
 		};
@@ -687,7 +687,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BABA5927299588B40006C3AA /* Build configuration list for PBXProject "SqaureTest" */ = {
+		BABA5927299588B40006C3AA /* Build configuration list for PBXProject "Square" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BABA594F299588B50006C3AA /* Debug */,
@@ -696,7 +696,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BABA5951299588B50006C3AA /* Build configuration list for PBXNativeTarget "SqaureTest" */ = {
+		BABA5951299588B50006C3AA /* Build configuration list for PBXNativeTarget "Square" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BABA5952299588B50006C3AA /* Debug */,
@@ -705,7 +705,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BABA5954299588B50006C3AA /* Build configuration list for PBXNativeTarget "SqaureTestTests" */ = {
+		BABA5954299588B50006C3AA /* Build configuration list for PBXNativeTarget "SquareTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BABA5955299588B50006C3AA /* Debug */,
@@ -714,7 +714,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BABA5957299588B50006C3AA /* Build configuration list for PBXNativeTarget "SqaureTestUITests" */ = {
+		BABA5957299588B50006C3AA /* Build configuration list for PBXNativeTarget "SquareUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BABA5958299588B50006C3AA /* Debug */,
