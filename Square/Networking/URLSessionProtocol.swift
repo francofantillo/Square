@@ -1,6 +1,6 @@
 //
 //  URLSessionProtocol.swift
-//  SqaureTest
+//  Square
 //
 //  Created by Franco Fantillo on 2023-02-10.
 //

@@ -1,6 +1,6 @@
 //
-//  SqaureTestTests.swift
-//  SqaureTestTests
+//  SquareTests.swift
+//  SquareTests
 //
 //  Created by Franco Fantillo on 2023-02-09.
 //
@@ -8,9 +8,9 @@
 import XCTest
 import Foundation
 import SwiftUI
-@testable import SqaureTest
+@testable import Square
 
-final class SquareTestTests: XCTestCase {
+final class SquareTests: XCTestCase {
 
     var httpClientSuccess: HttpClient!
     var httpClientFail400: HttpClient!

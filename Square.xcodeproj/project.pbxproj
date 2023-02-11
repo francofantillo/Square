@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA4E2C1429974C6A00D1DA11 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA4E2C1329974C6A00D1DA11 /* CachedAsyncImage */; };
 		BABA5934299588B50006C3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA5933299588B50006C3AA /* Assets.xcassets */; };
 		BABA5938299588B50006C3AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA5937299588B50006C3AA /* Preview Assets.xcassets */; };
-		BABA5942299588B50006C3AA /* SqaureTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5941299588B50006C3AA /* SqaureTestTests.swift */; };
-		BABA594C299588B50006C3AA /* SqaureTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA594B299588B50006C3AA /* SqaureTestUITests.swift */; };
-		BABA594E299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */; };
+		BABA5942299588B50006C3AA /* SquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5941299588B50006C3AA /* SquareTests.swift */; };
 		BABA595C2995891F0006C3AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA595B2995891F0006C3AA /* AppDelegate.swift */; };
 		BABA595F29958ABA0006C3AA /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA595E29958ABA0006C3AA /* EmployeeViewController.swift */; };
 		BABA596129958D940006C3AA /* CellSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA596029958D940006C3AA /* CellSizes.swift */; };
@@ -25,7 +24,6 @@
 		BABA59772995F7680006C3AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA59762995F7680006C3AA /* SceneDelegate.swift */; };
 		BABA5979299601FE0006C3AA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA5978299601FE0006C3AA /* Extensions.swift */; };
 		BABA597B299602CF0006C3AA /* Employees.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA597A299602CF0006C3AA /* Employees.swift */; };
-		BABA597E2996EE600006C3AA /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BABA597D2996EE600006C3AA /* CachedAsyncImage */; };
 		BABA598229970DDF0006C3AA /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA598129970DDF0006C3AA /* URLSessionProtocol.swift */; };
 		BABA598329970DDF0006C3AA /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA598129970DDF0006C3AA /* URLSessionProtocol.swift */; };
 		BABA598429970E480006C3AA /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA597F29970D210006C3AA /* MockURLSession.swift */; };
@@ -39,25 +37,15 @@
 			remoteGlobalIDString = BABA592B299588B40006C3AA;
 			remoteInfo = SqaureTest;
 		};
-		BABA5948299588B50006C3AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BABA5924299588B40006C3AA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BABA592B299588B40006C3AA;
-			remoteInfo = SqaureTest;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BABA592C299588B40006C3AA /* Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Square.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABA5933299588B50006C3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BABA5935299588B50006C3AA /* SqaureTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SqaureTest.entitlements; sourceTree = "<group>"; };
+		BABA5935299588B50006C3AA /* Square.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Square.entitlements; sourceTree = "<group>"; };
 		BABA5937299588B50006C3AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BABA593D299588B50006C3AA /* SquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BABA5941299588B50006C3AA /* SqaureTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestTests.swift; sourceTree = "<group>"; };
-		BABA5947299588B50006C3AA /* SquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BABA594B299588B50006C3AA /* SqaureTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestUITests.swift; sourceTree = "<group>"; };
-		BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqaureTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BABA5941299588B50006C3AA /* SquareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareTests.swift; sourceTree = "<group>"; };
 		BABA595B2995891F0006C3AA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABA595E29958ABA0006C3AA /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
 		BABA596029958D940006C3AA /* CellSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSizes.swift; sourceTree = "<group>"; };
@@ -81,18 +69,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABA597E2996EE600006C3AA /* CachedAsyncImage in Frameworks */,
+				BA4E2C1429974C6A00D1DA11 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BABA593A299588B50006C3AA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BABA5944299588B50006C3AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,9 +86,8 @@
 		BABA5923299588B40006C3AA = {
 			isa = PBXGroup;
 			children = (
-				BABA592E299588B40006C3AA /* SqaureTest */,
-				BABA5940299588B50006C3AA /* SqaureTestTests */,
-				BABA594A299588B50006C3AA /* SqaureTestUITests */,
+				BABA592E299588B40006C3AA /* Square */,
+				BABA5940299588B50006C3AA /* SquareTests */,
 				BABA592D299588B40006C3AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,12 +97,11 @@
 			children = (
 				BABA592C299588B40006C3AA /* Square.app */,
 				BABA593D299588B50006C3AA /* SquareTests.xctest */,
-				BABA5947299588B50006C3AA /* SquareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BABA592E299588B40006C3AA /* SqaureTest */ = {
+		BABA592E299588B40006C3AA /* Square */ = {
 			isa = PBXGroup;
 			children = (
 				BABA59722995F1EC0006C3AA /* Info.plist */,
@@ -133,10 +112,10 @@
 				BABA595D2995895F0006C3AA /* UI */,
 				BABA5933299588B50006C3AA /* Assets.xcassets */,
 				BABA597F29970D210006C3AA /* MockURLSession.swift */,
-				BABA5935299588B50006C3AA /* SqaureTest.entitlements */,
+				BABA5935299588B50006C3AA /* Square.entitlements */,
 				BABA5936299588B50006C3AA /* Preview Content */,
 			);
-			path = SqaureTest;
+			path = Square;
 			sourceTree = "<group>";
 		};
 		BABA5936299588B50006C3AA /* Preview Content */ = {
@@ -147,21 +126,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BABA5940299588B50006C3AA /* SqaureTestTests */ = {
+		BABA5940299588B50006C3AA /* SquareTests */ = {
 			isa = PBXGroup;
 			children = (
-				BABA5941299588B50006C3AA /* SqaureTestTests.swift */,
+				BABA5941299588B50006C3AA /* SquareTests.swift */,
 			);
-			path = SqaureTestTests;
-			sourceTree = "<group>";
-		};
-		BABA594A299588B50006C3AA /* SqaureTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BABA594B299588B50006C3AA /* SqaureTestUITests.swift */,
-				BABA594D299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift */,
-			);
-			path = SqaureTestUITests;
+			path = SquareTests;
 			sourceTree = "<group>";
 		};
 		BABA595A299589050006C3AA /* Launch */ = {
@@ -230,7 +200,7 @@
 			);
 			name = Square;
 			packageProductDependencies = (
-				BABA597D2996EE600006C3AA /* CachedAsyncImage */,
+				BA4E2C1329974C6A00D1DA11 /* CachedAsyncImage */,
 			);
 			productName = SqaureTest;
 			productReference = BABA592C299588B40006C3AA /* Square.app */;
@@ -254,24 +224,6 @@
 			productReference = BABA593D299588B50006C3AA /* SquareTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BABA5946299588B50006C3AA /* SquareUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BABA5957299588B50006C3AA /* Build configuration list for PBXNativeTarget "SquareUITests" */;
-			buildPhases = (
-				BABA5943299588B50006C3AA /* Sources */,
-				BABA5944299588B50006C3AA /* Frameworks */,
-				BABA5945299588B50006C3AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BABA5949299588B50006C3AA /* PBXTargetDependency */,
-			);
-			name = SquareUITests;
-			productName = SqaureTestUITests;
-			productReference = BABA5947299588B50006C3AA /* SquareUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -289,10 +241,6 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = BABA592B299588B40006C3AA;
 					};
-					BABA5946299588B50006C3AA = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = BABA592B299588B40006C3AA;
-					};
 				};
 			};
 			buildConfigurationList = BABA5927299588B40006C3AA /* Build configuration list for PBXProject "Square" */;
@@ -305,7 +253,7 @@
 			);
 			mainGroup = BABA5923299588B40006C3AA;
 			packageReferences = (
-				BABA597C2996EE600006C3AA /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				BA4E2C1229974C6A00D1DA11 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = BABA592D299588B40006C3AA /* Products */;
 			projectDirPath = "";
@@ -313,7 +261,6 @@
 			targets = (
 				BABA592B299588B40006C3AA /* Square */,
 				BABA593C299588B50006C3AA /* SquareTests */,
-				BABA5946299588B50006C3AA /* SquareUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -330,13 +277,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BABA593B299588B50006C3AA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BABA5945299588B50006C3AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,16 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABA598329970DDF0006C3AA /* URLSessionProtocol.swift in Sources */,
-				BABA5942299588B50006C3AA /* SqaureTestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BABA5943299588B50006C3AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BABA594C299588B50006C3AA /* SqaureTestUITests.swift in Sources */,
-				BABA594E299588B50006C3AA /* SqaureTestUITestsLaunchTests.swift in Sources */,
+				BABA5942299588B50006C3AA /* SquareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,11 +323,6 @@
 			isa = PBXTargetDependency;
 			target = BABA592B299588B40006C3AA /* Square */;
 			targetProxy = BABA593E299588B50006C3AA /* PBXContainerItemProxy */;
-		};
-		BABA5949299588B50006C3AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BABA592B299588B40006C3AA /* Square */;
-			targetProxy = BABA5948299588B50006C3AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,15 +441,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SqaureTest/SqaureTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Square/Square.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SqaureTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Square/Preview Content\"";
 				DEVELOPMENT_TEAM = 2KLC5XX3QG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SqaureTest/Info.plist;
+				INFOPLIST_FILE = Square/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -540,7 +466,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTest;
+				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.Square;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -557,15 +483,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SqaureTest/SqaureTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Square/Square.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SqaureTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Square/Preview Content\"";
 				DEVELOPMENT_TEAM = 2KLC5XX3QG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SqaureTest/Info.plist;
+				INFOPLIST_FILE = Square/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -582,7 +508,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTest;
+				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.Square;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -606,7 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SquareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -629,7 +555,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SquareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -637,50 +563,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Square.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Square";
-			};
-			name = Release;
-		};
-		BABA5958299588B50006C3AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLC5XX3QG;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SqaureTest;
-			};
-			name = Debug;
-		};
-		BABA5959299588B50006C3AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2KLC5XX3QG;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Swiftech.SqaureTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SqaureTest;
 			};
 			name = Release;
 		};
@@ -714,32 +596,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BABA5957299588B50006C3AA /* Build configuration list for PBXNativeTarget "SquareUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BABA5958299588B50006C3AA /* Debug */,
-				BABA5959299588B50006C3AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BABA597C2996EE600006C3AA /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+		BA4E2C1229974C6A00D1DA11 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BABA597D2996EE600006C3AA /* CachedAsyncImage */ = {
+		BA4E2C1329974C6A00D1DA11 /* CachedAsyncImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BABA597C2996EE600006C3AA /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			package = BA4E2C1229974C6A00D1DA11 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
 			productName = CachedAsyncImage;
 		};
 /* End XCSwiftPackageProductDependency section */
